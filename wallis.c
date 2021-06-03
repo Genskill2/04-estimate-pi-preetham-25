@@ -6,8 +6,9 @@
 float wallis_pi(int i){
   int j;
   float x=1.0;
-  for(j=1;j<=i;j++)
-    x*=(float)(4*j*j)/((4*j*j)-1);
+  for(j=1;j<=i;j++){
+    x*=((float)(4*j*j)/((4*j*j)-1));
+    }
   return 2*x;
   }
 
